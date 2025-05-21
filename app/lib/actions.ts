@@ -62,6 +62,7 @@ export async function updateInvoice(id: string, formData: FormData) {
 }
 
 export async function deleteInvoice(id: string) {
+  throw new Error("Delete invoice action is not implemented yet");
   try {
     await sql`
       DELETE FROM invoices
